@@ -17,11 +17,11 @@ app.get('/', function(req, res){
 
 app.get('/:id', function(req, res){
 	if (req.session.secret === key) {
-        console.log("----------- CORRECT SESSION SECRED KEY ------------");
+        console.log("----------- CORRECT SESSION SECRET KEY ------------");
         var picId = req.params.id;
         res.sendfile(__dirname + '/imgs/' + picId + '.jpg');
     } else {
-        console.log("----------- BAD SESSION SECRED KEY ------------");
+        console.log("----------- BAD SESSION SECRET KEY ------------");
         res.send('<p>Unauthorized user!');
     }
 });
