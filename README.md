@@ -1,4 +1,4 @@
 node-repo
 =========
 
-A repo with node. Node-repo
+Basic node server for reference
